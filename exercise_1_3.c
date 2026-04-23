@@ -1,12 +1,13 @@
 #include <stdio.h>
 
+// ==> This is a comment in C
+/* ==> This is a comment in C */ 
+
+/* The 'int' in the 'int main()' declares the return
+ * type of the function called 'main' */
 int main() {
 	
-	// => This is a comment in C
-	/* => This is a comment in C */
-
-
-	//  variable declaration 
+	// variable declaration 
 	float fahr, celsius;
 	int lower_limit, upper_limit, step_size;
 
@@ -31,4 +32,5 @@ int main() {
 		fahr = fahr + step_size;
 	}
 
+	return 0;
 }
