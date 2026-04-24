@@ -6,6 +6,11 @@
 
 #include <stdio.h>
 
+// define variables 
+#define LOWER_LIMIT 0		// lower limit of table
+#define UPPER_LIMIT 300		// upper limit of table 
+#define STEP_SIZE 20		// step size 
+
 int main() {
 
 	// Conversion for Fahrenheit to Celsius 
@@ -14,22 +19,19 @@ int main() {
 	float celsius, fahr;
 	int upper_limit, lower_limit, step_size;
 
-	// variable initialization 
-	lower_limit = 0;	// lower limit 
-	upper_limit = 300;	// upper limit 
-	step_size = 20;		// step size 
+	// run for loop to print to terminal 
+	for (fahr = UPPER_LIMIT; fahr >= LOWER_LIMIT; fahr -= STEP_SIZE){
+		
+		// if this loop for the first time print the heading
+		if (fahr == UPPER_LIMIT)
+			printf("Fahrenheit -> Celsius\n");
 
-	// print table heading 
-	printf("Fahrenheit -> Celsius\n");
-
-	// set fahr equals to upper_limit 
-	fahr = upper_limit;
-
-	// looping to convert and print results to the terminal 
-	while (fahr >= lower_limit) {
+		// convert celsius to farenheit 
 		celsius = (5.0/9.0) * (fahr - 32.0);
+
+		// print output to terminal 
 		printf("%.1f°F -> %.1f°C\n", fahr, celsius);
-		fahr = fahr - step_size;
+		 
 	}
 
 	return 0;
