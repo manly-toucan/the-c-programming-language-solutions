@@ -16,7 +16,7 @@
 int main(void) {
 	
 	// print the message to screen 
-	printf(" \c <c is some charcter not listed above> \n");
+	printf(" \\c <c is some charcter not listed above> \n");
 
 	// return 0 on successful completion of code 
 	return 0;
