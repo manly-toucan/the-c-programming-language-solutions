@@ -18,6 +18,7 @@ int main(void) {
 	for (int i = LOWER_LIMIT; i < UPPER_LIMIT; i += STEP) {
 		printf("%d°F -> %0.1f°C\n", i, fahr_to_cels(i));
 	}
+	return 0;
 }
 
 /* fahrenheit to celsius converter */
